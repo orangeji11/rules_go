@@ -225,6 +225,8 @@ def _detect_host_platform(ctx):
                 goarch = "arm"
             elif uname == "ppc64le":
                 goarch = "ppc64le"
+            elif uname == "mips64":
+                goarch = "mips64"
 
         # Default to amd64 when uname doesn't return a known value.
 
