@@ -204,6 +204,8 @@ def _detect_host_platform(ctx):
                 host = "linux_arm"
             elif uname == "ppc64le":
                 host = "linux_ppc64le"
+            elif uname == "mips64":
+                host = "linux_mips64"
 
         # Default to amd64 when uname doesn't return a known value.
 
